@@ -15,6 +15,8 @@ jobs:
       - uses: r-lib/actions/setup-pandoc@v1
       - name: Install rmarkdown and blogdown
         run: Rscript -e 'install.packages(c("rmarkdown","blogdown"))'
+      - name: Install dplyr and readr
+        run: Rscript -e 'install.packages(c("dplyr","readr"))'
       - name: Install Hugo
         run: Rscript -e 'blogdown::install_hugo(extended = TRUE, version = "0.68.3")'
       - name: Get themes

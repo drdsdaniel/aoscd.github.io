@@ -1,23 +1,17 @@
-baseURL = "https://example.com"
+baseURL = "/"
 languageCode = "en-us"
-title = "Showcase Theme"
+title = "AOSCD"
 Paginate = 1000
 googleAnalytics = ""
 theme = "showcase-hugo-theme"
 disableKinds = ["taxonomy", "taxonomyTerm", "RSS"]
 
 [params]
-  author = "showcase"
-  description = "Minimal, one page, theme for showcasing your work"
-  message = ""
+  author = "Alternativas Open Source para la Ciencia de Datos (AOSCD)"
+  description = "Alternativas Open Source para la Ciencia de Datos"
+  message = "AOSCD es un proyecto que pretende ofrecer alternativas Open Source al uso de software privativo para la solución de tareas específicas en la ciencia de datos. A continuación, encontrarás un listado de todos los recursos que hemos creado y se encuentran a a su completa disposición disposición."
   hideAutoMenu = false
 
-[[menu.main]]
-  name = "External"
-  url = "https://example.com"
-
 [social]
-  facebook = "https://facebook.com"
-  twitter = "https://twitter.com"
-  instagram = "https://instagram.com"
-  linkedin = "https://linkedin.com"
+  twitter = "https://twitter.com/search?q=%23aoscd&src=typed_query"
+  github = "https://github.com/aoscd"
