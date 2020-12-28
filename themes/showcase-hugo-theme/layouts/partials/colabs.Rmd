@@ -5,8 +5,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r, results = "asis", echo = FALSE, message = FALSE}
 library(dplyr)
-contributors <- readr::read_csv(url('https://raw.githubusercontent.com/AOSCD/aoscd-matlab/main/contributors.csv'), col_types = list())
-contributors <- contributors %>% 
+matlab <- readr::read_csv(url('https://raw.githubusercontent.com/AOSCD/aoscd-matlab/main/contributors.csv'), col_types = list())
+contributors <- bind_rows(matlab) %>% 
+  filter(!duplicated(login)) %>% 
   mutate(
     link = glue::glue("[\\@{login}](https://github.com/{login})"),
     desc = ifelse(is.na(name), link, glue::glue("{name} ({link})"))

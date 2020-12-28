@@ -7,9 +7,9 @@ theme = "showcase-hugo-theme"
 disableKinds = ["taxonomy", "taxonomyTerm", "RSS"]
 
 [params]
-  author = "Alternativas Open Source para la Ciencia de Datos (AOSCD)"
+  author = "AOSCD"
   description = "Alternativas Open Source para la Ciencia de Datos"
-  message = "AOSCD es un proyecto que pretende ofrecer alternativas Open Source al uso de software privativo para la solución de tareas específicas en la ciencia de datos. A continuación, encontrarás un listado de todos los recursos que hemos creado y se encuentran a a su completa disposición disposición."
+  message = "Es un proyecto de código abierto que pretende ofrecer alternativas Open Source al uso de software privativo para la solución de tareas específicas en la ciencia de datos. A continuación, encontrarás un listado de todos los recursos que hemos creado y se encuentran a su completa disposición."
   hideAutoMenu = false
 
 [social]
